@@ -112,7 +112,7 @@ function esPar(num) {
   // Tu código:
   var resto;
   resto=num%2;
-  if(resto==0){
+  if(resto===0){
     return true;
   }
   return false;
@@ -124,7 +124,7 @@ function esImpar(num) {
   // Tu código:
   var resto;
   resto=num%2;
-  if(resto==1){
+  if(resto===1){
     return true;
   }
   return false;
@@ -155,15 +155,15 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var x= Math.redondearNumero(num);
-  return x;
+  num= Math.round(num);
+  return num;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var x=Math.redondearHaciaArriba(num);
-  return x;
+  num=Math.ceil(num);
+  return num;
 }
 
 function numeroRandom() {
@@ -185,7 +185,7 @@ function esPositivo(numero) {
   if(numero<0){
     return "Es negativo";
   } 
-  if(numero==0){
+  if(numero===0){
     return "false";
   } 
  
@@ -260,7 +260,16 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  var letras=length(letra);
+  if(letras===1){
+    if(letra==='a'||letra==='e'||letra==='i'||letra==='o'||letra==='u')
+    {
+      return "Es vocal";
+    }
+    return "Dato incorrecto";
+  }else{
+    return "Dato incorrecto";
+  }
 }
 
 
