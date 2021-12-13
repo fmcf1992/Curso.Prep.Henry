@@ -204,7 +204,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nc='soy';
+  var nc;
   nc=nc+nombre+' '+apellido;
   return nc;
 }
@@ -213,7 +213,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  nombre='hola'+nombre;
+  nombre='hola'+' '+nombre;
   return nombre;
 }
 
@@ -261,7 +261,7 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  var letras=length(letra);
+  var letras=letra.length;
   if(letras===1){
     if(letra==='a'||letra==='e'||letra==='i'||letra==='o'||letra==='u')
     {
