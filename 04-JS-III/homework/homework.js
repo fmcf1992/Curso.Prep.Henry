@@ -61,7 +61,10 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
   var cadenap='';
   for(let i=0; i<palabras.length;i++){
-    cadenap+=palabras[i]+' ';
+    cadenap+=palabras[i];
+    if(i<palabras.length-1){
+      cadenap+=' ';
+    }
   }
   return cadenap;
 }
