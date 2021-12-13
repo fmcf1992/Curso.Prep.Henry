@@ -100,10 +100,12 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   var suma=0;
+  var prom=0;
   for(let i=0; i<resultadosTest.length;i++){
     suma+=numeros[i];
   }
-  return suma/resultadosTest.length;
+  prom=suma/resultadosTest.length;
+  return prom;
 }
 
 
