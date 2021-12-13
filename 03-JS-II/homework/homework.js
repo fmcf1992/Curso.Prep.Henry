@@ -176,12 +176,14 @@ function esPrimo(numero) {
     for(let i=1;i<numero+1;i++){
       if(numero%i===0){
         contador++;
+      }
     }
   }
   if(contador===2){
     return true;
   }
   return false;
+
 }
 
 function esVerdadero(valor){
