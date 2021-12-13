@@ -63,9 +63,9 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(x===y){
-    return "true";
+    return true;
   }
-  return "false";
+  return false;
   
 }
 
@@ -75,9 +75,9 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
   if(string.length(str1)===string.length(str2))
   {
-    return "true";
+    return true;
   }
-  return "false";
+  return false;
 }
 
 function menosQueNoventa(num) {
@@ -85,9 +85,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(90>num){
-    return "true";
+    return true;
   }
-  return "false";
+  return false;
 }
 
 function mayorQueCincuenta(num) {
@@ -95,9 +95,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num>50){
-    return "true";
+    return true;
   }
-  return "false";
+  return false;
 }
 
 function obtenerResto(x, y) {
@@ -110,20 +110,24 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if((num%2)===0){
-    return "true";
+  var resto;
+  resto=num%2;
+  if(resto==0){
+    return true;
   }
-  return "false";
+  return false;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if((num%2)===1){
-    return "true";
+  var resto;
+  resto=num%2;
+  if(resto==1){
+    return true;
   }
-  return "false";
+  return false;
 }
 
 function elevarAlCuadrado(num) {
