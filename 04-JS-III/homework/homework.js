@@ -268,11 +268,11 @@ function continueStatement(numero) {
   // Tu código:
   var newA2=[];
   var suma=numero;
-  for(var i=0;i<10;i++){
-    suma=suma+2;
+  for(var i=0;i<10;i++){ 
     if(i===5){
       continue;
     }else{
+      suma=suma+2;
       newA2.push(suma);
     }
   }
