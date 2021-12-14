@@ -153,12 +153,12 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   switch(numeroDeDia){
     case 1: return "Es fin de semana";
-    case 2: return "Es fin de semana";
+    case 2: return "Es dia Laboral";
     case 3: return "Es dia Laboral";
     case 4: return "Es dia Laboral";
     case 5: return "Es dia Laboral";
     case 6: return "Es dia Laboral";
-    case 7: return "Es dia Laboral";
+    case 7: return"Es fin de semana";
     default: return "No es un dia valido";
   }
   
