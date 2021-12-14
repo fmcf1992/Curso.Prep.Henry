@@ -158,7 +158,7 @@ function diaDeLaSemana(numeroDeDia) {
     case 4: return "Es dia Laboral";
     case 5: return "Es dia Laboral";
     case 6: return "Es dia Laboral";
-    case 7: return"Es fin de semana";
+    case 7: return "Es fin de semana";
     default: return "No es un dia valido";
   }
   
@@ -203,7 +203,18 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+  var newa=[];
+  for(let i=0; i<array.length;i++){
+    if(array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre'){
+      newa.push(array[i]);
+    }
+  }
+  if(newa.length<3){
+    return "No se encontraron los meses pedidos";
+  }else{
+    return newa;
+  }
+  
 }
 
 
@@ -214,7 +225,7 @@ function mayorACien(array) {
   // Tu código:
   var newA=[];
   for(let i=0;i<array.length;i++){
-    if(array[i]>=100){
+    if(array[i]>100){
       newA.push(array[i]);
     }  
   }
