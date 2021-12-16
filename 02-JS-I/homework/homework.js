@@ -110,9 +110,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var resto;
-  resto=num%2;
-  if(resto===0){
+  if((num%2)===0){
     return true;
   }
   return false;
@@ -122,9 +120,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  var resto;
-  resto=num%2;
-  if(resto===1){
+  if((num%2)===1){
     return true;
   }
   return false;
@@ -134,29 +130,25 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var x=Math.pow(num,2);
-  return x;
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var x=Math.pow(num,3);
-  return x;
+  return Math.pow(num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var x= Math.pow(num,exponent);
-  return x;
+  return Math.pow(num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  num= Math.round(num);
-  return num;
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
@@ -169,8 +161,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var x=Math.random(0,1);
-  return x;
+  return Math.random(0,1);
 }
 
 function esPositivo(numero) {
@@ -212,34 +203,27 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  nombre='Hola'+' '+nombre+'!';
-  return nombre;
+  return ('Hola'+' '+nombre+'!');
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  var area;
-  area=alto*ancho;
-  return area;
+  return alto*ancho;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  var per;
-  per=4*lado;
-  return per;
+  return 4*lado;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var area;
-  area=base*altura/2;
-  return area;
+  return base*altura/2;
 }
 
 
@@ -247,10 +231,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var cambio;
-  const dolar=1.2;
-  cambio= dolar*euro;
-  return cambio;
+  const cambio=1.2;
+  return euro*cambio;
 }
 
 

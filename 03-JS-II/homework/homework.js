@@ -5,13 +5,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if(x>y){
+  if(x>=y){
     return x;
   }
-  if(y>x){
     return y;
-  }
-  return x;
 }
 
 function mayoriaDeEdad(edad) {
@@ -69,11 +66,11 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color){
-    case "blue": return "This is blue";
-    case "red": return "This is red";
-    case "green": return "This is green";
-    case "orange": return "This is orange";
-    default: return "Color not found";
+    case "blue": return "This is blue";break;
+    case "red": return "This is red";break;
+    case "green": return "This is green";break;
+    case "orange": return "This is orange";break;
+    default: return "Color not found";break;
   }
   
 }
