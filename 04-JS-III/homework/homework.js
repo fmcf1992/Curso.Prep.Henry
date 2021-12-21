@@ -3,7 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array[0]
+  return array[0];
 }
 
 
@@ -152,14 +152,14 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   switch(numeroDeDia){
-    case 1: return "Es fin de semana";
-    case 2: return "Es dia Laboral";
-    case 3: return "Es dia Laboral";
-    case 4: return "Es dia Laboral";
-    case 5: return "Es dia Laboral";
-    case 6: return "Es dia Laboral";
-    case 7: return "Es fin de semana";
-    default: return "No es un dia valido";
+    case 1: return "Es fin de semana";break;
+    case 2: return "Es dia Laboral";break;
+    case 3: return "Es dia Laboral";break;
+    case 4: return "Es dia Laboral";break;
+    case 5: return "Es dia Laboral";break;
+    case 6: return "Es dia Laboral";break;
+    case 7: return "Es fin de semana";break;
+    default: return "No es un dia valido, ingrese del 1 al 7";break;
   }
   
 } 
