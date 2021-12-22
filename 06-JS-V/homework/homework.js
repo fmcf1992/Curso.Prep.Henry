@@ -1,6 +1,6 @@
 // No cambies los nombres de las funciones.
 
-const { stringify } = require("git-url-parse");
+
 
 function crearUsuario(){
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
@@ -45,13 +45,22 @@ function agregarMetodoPrototype(Constructor) {
 }
 
 function agregarStringInvertida() {
-  // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
+  // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, 
+  //pero invertida.
   // El método debe llamarse "reverse"
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-  String.prototype.reverse = function () {
-    
+  String.prototype.reverse = function(){
+    let cadena='';
+    if(this.length===0){
+      return this;
+    }else{
+      for(let i=this.length-1;i>=0;i--){
+          cadena+=this.charAt(i);
+      }
+      return cadena;
+    }
   }
 }
 
