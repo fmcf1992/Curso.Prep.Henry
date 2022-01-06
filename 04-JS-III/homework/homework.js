@@ -192,8 +192,9 @@ function todosIguales(arreglo) {
   }
   if(contador===arreglo.length){
     return true;
+  }else{
+    return false;
   }
-  return false;
   
 } 
 
