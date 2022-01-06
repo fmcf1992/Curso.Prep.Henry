@@ -64,9 +64,9 @@ function sonIguales(x, y) {
   // Tu código:
   if(x===y){
     return true;
+  }else{
+    return false;
   }
-  return false;
-  
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -76,18 +76,20 @@ function tienenMismaLongitud(str1, str2) {
   if(str1.length===str2.length)
   {
     return true;
+  }else{
+    return false;
   }
-  return false;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(90>num){
+  if(num<90){
     return true;
+  }else{
+    return false;
   }
-  return false;
 }
 
 function mayorQueCincuenta(num) {
@@ -96,8 +98,9 @@ function mayorQueCincuenta(num) {
   // Tu código:
   if(num>50){
     return true;
+  }else{
+    return false;
   }
-  return false;
 }
 
 function obtenerResto(x, y) {
@@ -112,8 +115,9 @@ function esPar(num) {
   // Tu código:
   if((num%2)===0){
     return true;
+  }else{
+    return false;
   }
-  return false;
 }
 
 function esImpar(num) {
@@ -122,8 +126,9 @@ function esImpar(num) {
   // Tu código:
   if((num%2)===1){
     return true;
+  }else{
+    return false;
   }
-  return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -173,12 +178,12 @@ function esPositivo(numero) {
   
   if(numero===0){
     return false;
-  }
-  if(numero!==0){
+  }else{
     if(numero>0){
       return "Es positivo";
-    }
+    }else{
       return "Es negativo";
+    }
   }
  
 }
@@ -187,8 +192,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  str=str+'!';
-  return str;
+  return (str+'!');
 }
 
 function combinarNombres(nombre, apellido) {
