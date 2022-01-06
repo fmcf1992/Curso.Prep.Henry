@@ -9,7 +9,7 @@ function crearGato(nombre, edad) {
   const gato = {
     nombre: nombre,
     edad: edad,
-    meow: function(){
+    meow(){
       return 'Meow!';
     }
   };
@@ -31,6 +31,9 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  // let metodo='nombredefuncion';
+  // objeto[metodo] esto se traduce al nombre de la funcion
+  // nombredefuncion();
   objeto[metodo]();
 }
 
