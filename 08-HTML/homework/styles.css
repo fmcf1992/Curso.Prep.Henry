@@ -1,5 +1,10 @@
+body{
+    background-color: #000;
+    color:#fff;
+}
+
 h1{
-    color: red;
+    color:rgb(213, 13, 244);
 }
 img{
     width: 400px;
@@ -8,10 +13,9 @@ img{
 #thirdDiv{
     width: 500px;
     height: 600px;
-    background-color: gray;
+    background-color: rgb(67, 67, 67);
     padding: 50px;
-    border-width: 10px;
-    border-style: dashed;
+    border: 3px solid rgb(237, 12, 249)
 }
 #spanId{
     font-size: 18px;

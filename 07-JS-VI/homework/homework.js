@@ -73,16 +73,15 @@ function filter(array) {
   //   if(array[i].substring(0,1)==='a'){
   //     nuevo.push(array[i]);
   //   }
-  // } 
+  // }
   // return nuevo;
   let nuevo=[];
   array.forEach((elemen)=>{
     if(elemen.substring(0,1)==='a'){
       nuevo.push(elemen);
     }
-    
   }); 
-  return nuevo;
+  return
 }
 
 // No modificar nada debajo de esta línea
