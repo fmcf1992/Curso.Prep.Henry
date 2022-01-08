@@ -1,0 +1,34 @@
+*{
+    font-size: 20px;
+    color:rgb(9, 9, 9);
+}
+
+body{
+    
+}
+div{
+    border:1px solid #000;
+}
+.principal{
+    display: flex;
+    padding: 30px;
+    /* min-width: 320px; */
+    /* flex-wrap: wrap; */
+}
+.personal{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.div_personal{
+    flex-grow: 1;
+    /* flex-basis: 320px; */
+}
+.div__avatar{
+    flex-grow: 1;
+    padding: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

@@ -3,72 +3,77 @@
     <header>
         <title>cv</title>
         <meta charset="utf-8">
-        <style>
-            img{
-                width: 150px;
-                height: 150px;
-            }
-        </style>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./cv.css">
     </header>
     <body>
         <!-- Descripción Personal -->
-        <section>
-            <h3>Descripción Personal</h3>
-            <p>Apellidos y Nombres	: Castro Falen Francis Michael </p>
-            <p>Lugar de Nacimiento	: Pacora, Lambayeque, Perú</p>
-            <p>Fecha de Nacimiento	: 01 de marzo de 1992</p>
-            <p>Estado Civil: Soltero</p>
-            <p>DNI: 46831612</p>
-            <p>Domicilio: Calle Santa Rosa 105 – Pacora, Lambayeque.</p>
-            <p>Celular: 935172818</p>
-            <p>Email: michaelcastrofalen@hotmail.com</p>
-        </section>
-        <!-- Educación -->
-        <section>
-            <h3>Educación</h3>
-            <p>16/01/2017 - Bachiller en ingeniería de sistemas - Universidad Nacional Pedro Ruiz Gallo</p>
-        </section>
-        <!-- Experiencias Laborales -->
-        <section>
-            <h3>Experiencias Laborales</h3>
-            <h4>Puesto:Supervisor Informático</h4>
-            <p>11 de agosto de 2021 al 24 de noviembre de 2021
-            Centro de trabajo: Instituto Nacional de Estadística e Informática – Sede Bagua Grande.
-            Proyecto: Evaluación de nombramiento docente 2021
-            </p>
-            <h4>Puesto: Soporte técnico</h4>
-            <p>
-                06 de enero al 30 de setiembre de 2020 Centro de trabajo: ZIZEHOST – Lambayeque 
-            </p>
-        </section>
-        <!-- Skills -->
-        <section>
-            <h3>Skills</h3>
-            <p>Comunicación</p>
-            <p>Trabajo en equipo</p>
-            <p>Responsabilidad</p>
-        </section>
-        <!-- Tu foto -->
-        <section>
-            <h3>Foto</h3>
-            <img src="../img/fotocv.jpg" />
-        </section>
-        <!-- Hobbies -->
-        <section>
-            <h3>Hobbies</h3>
-            <p>Deporte</p>
-            <p>series y cine</p>
-            <p>Escuchar música</p>
-        </section>
-        <!-- por qué estás estudiando esta carrera y cuáles son tus expectativas al finalizar la carrera -->
-        <section>
-            <h3>Motivación y expectativas</h3>
-            <p>Quiero capacitarme en desarrollo web, para obtener un puesto laboral que me permita
-            tener la libertad necesaria de desarrollar trabajo desde casa.</p>
-            <p>Las expectativas que tengo en el curso es obtener los conocmientos y experiencias necesarias 
-                para lograr obetener un puesto de desarrollador web.
-            </p>
-        </section>
+        <div>
+            <div class="titulo">
+                <h1 class="titulo__h1">Curriculum Vitae</h1>
+            </div>
+        </div>
+        <div class="principal">
+            <div class="personal">
+                <div class=div_personal>
+                    <h3 class="personal__h3">Descripción Personal</h3>
+                    <p class="personal__p"><b class="personal__p-b">Apellidos y Nombres	:</b> Castro Falen Francis Michael </p>
+                    <p class="personal__p"><b class="personal__p-b">Lugar de Nacimiento	:</b> Pacora, Lambayeque, Perú</p>
+                    <p class="personal__p"><b class="personal__p-b">Fecha de Nacimiento	:</b> 01 de marzo de 1992</p>
+                    <p class="personal__p"><b class="personal__p-b">Estado Civil:</b> Soltero</p>
+                    <p class="personal__p"><b class="personal__p-b">DNI: </b>46831612</p>
+                    <p class="personal__p"><b class="personal__p-b">Domicilio:</b> Calle Santa Rosa 105 – Pacora, Lambayeque.</p>
+                    <p class="personal__p"><b class="personal__p-b">Celular:</b> 935172818</p>
+                    <p class="personal__p"><b class="personal__p-b">Email:</b> michaelcastrofalen@hotmail.com</p>
+                </div>
+                <div class="div__avatar">
+                    <img src="../img/fotocv.jpg" />
+                </di>
+            </div>
+            <!-- Educación -->
+            <div class="educacion">
+                <h3 class="educacion__h3">Educación</h3>
+                <p class="educacion__p">16/01/2017 - Bachiller en ingeniería de sistemas - Universidad Nacional Pedro Ruiz Gallo</p>
+            </div>
+            <!-- Experiencias Laborales -->
+            <div>
+                <h3>Experiencias Laborales</h3>
+                <h4>Puesto:Supervisor Informático</h4>
+                <p>11 de agosto de 2021 al 24 de noviembre de 2021
+                Centro de trabajo: Instituto Nacional de Estadística e Informática – Sede Bagua Grande.
+                Proyecto: Evaluación de nombramiento docente 2021
+                </p>
+                <h4>Puesto: Soporte técnico</h4>
+                <p>
+                    06 de enero al 30 de setiembre de 2020 Centro de trabajo: ZIZEHOST – Lambayeque 
+                </p>
+            </div>
+            <!-- Skills -->
+            <div>
+                <h3>Skills</h3>
+                <p>Comunicación</p>
+                <p>Trabajo en equipo</p>
+                <p>Responsabilidad</p>
+            </div>
+            <!-- Tu foto -->
+
+            <!-- Hobbies -->
+            <div>
+                <h3>Hobbies</h3>
+                <p>Deporte</p>
+                <p>series y cine</p>
+                <p>Escuchar música</p>
+            </div>
+            <!-- por qué estás estudiando esta carrera y cuáles son tus expectativas al finalizar la carrera -->
+            <div>
+                <h3>Motivación y expectativas</h3>
+                <p>Quiero capacitarme en desarrollo web, para obtener un puesto laboral que me permita
+                tener la libertad necesaria de desarrollar trabajo desde casa.</p>
+                <p>Las expectativas que tengo en el curso es obtener los conocmientos y experiencias necesarias 
+                    para lograr obetener un puesto de desarrollador web.
+                </p>
+            </div>
+        </div>
     </body>
 
 </html>
