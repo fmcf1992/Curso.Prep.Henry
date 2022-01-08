@@ -35,7 +35,7 @@ function numberOfCharacters(string) {
   //     case'a':
   //   }
     
-  }
+  
 
 }
 
